@@ -3,18 +3,17 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void) {
+int counter;
 
-	int i=10;
-
-	printf("함수 호출 전  i=%d \n", i);
-	inc(i);
-	printf("함수 호출 전  i=%d \n", i);
-	
-	return 0;
+void set_counter(void)
+{
+	counter = 20;	
 }
 
-int inc(int counter){
-	counter++;
-	return counter;
+int main(int argc, char *argv[]) {
+	
+	printf("counter = %d \n",counter);
+	set_counter();
+	printf("counter=%d\n",counter);
+	
 }
